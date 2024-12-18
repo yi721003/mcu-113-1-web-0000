@@ -11,7 +11,7 @@
     <div class="container">
       <nav id="header">
         <div class="nav-logo">Angular 書籍資訊</div>
-        <ul class="nav-menu">
+        <ul class="nav-menu" id="menu">
           <li class="nav-item">
             <a href="#home" class="nav-link active-link">首頁</a>
           </li>
@@ -25,8 +25,11 @@
             <a href="#contact" class="nav-link">聯絡作者</a>
           </li>
         </ul>
-        <div>
+        <div class="nav-button">
           <button type="button" class="btn">下載目錄 <i class="fa-regular fa-file-pdf"></i></button>
+        </div>
+        <div class="nav-menu-btn">
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
         </div>
       </nav>
       <main class="wrapper">

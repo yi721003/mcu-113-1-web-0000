@@ -1,0 +1,96 @@
+@media only screen and (max-width: 900px) {
+  nav {
+    .nav-button {
+      display: none;
+    }
+
+    .nav-menu-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nav-menu {
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(20px);
+      width: 100%;
+      min-height: 450px;
+      height: 90vh;
+      transition: 0.3s;
+
+      &.responsive {
+        left: 0;
+      }
+    }
+  }
+
+  .home-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+
+    .home-text {
+      width: 100%;
+      order: 2;
+      justify-content: center;
+      align-content: flex-start;
+      min-height: 60vh;
+
+      .name {
+        font-size: 30px;
+      }
+    }
+
+    .home-image {
+      order: 1;
+      justify-content: center;
+      min-height: 150px;
+      width: 100%;
+      margin-top: 65px;
+
+      .image {
+        margin: auto 0;
+        width: 150px;
+        overflow: hidden;
+
+        img {
+          width: 150px;
+        }
+      }
+    }
+  }
+
+  .about-container {
+    flex-direction: column;
+    justify-content: start;
+
+    .introduce,
+    .contents {
+      width: 100%;
+    }
+
+    .list {
+      padding-inline: 30px;
+    }
+  }
+
+  .skill-container {
+    flex-direction: column;
+  }
+
+  .contact-container {
+    flex-direction: column;
+
+    .info,
+    .form {
+      width: 100%;
+    }
+  }
+}

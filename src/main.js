@@ -2,6 +2,16 @@ window.onscroll = function () {
   headerShadow();
 };
 
+function openMenu() {
+  var menuBtn = document.getElementById("menu");
+
+  if (menuBtn.className === "nav-menu") {
+    menuBtn.className += " responsive";
+  } else {
+    menuBtn.className = "nav-menu";
+  }
+}
+
 function headerShadow() {
   const navHeader = document.getElementById("header");
 
